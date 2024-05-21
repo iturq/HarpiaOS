@@ -1,0 +1,6 @@
+tools/
+boot/
+tmp/
+src/disk.img
+src/old
+*.img
