@@ -7,8 +7,7 @@ C_SOURCE = $(wildcard kernel/*.c)
 #ASM_SOURCE += $(wildcard hal/*.asm)
 #OBJECTS = $(patsubst %.c,%.o,$(C_SOURCE)) hal/boot.o
 #OBJECT += $(patsubst %.asm,%.o,$(ASM_SOURCE))
-OBJECTS = $(addprefix $(TMP_PATH)/,$(patsubst %.c,%.o,$(C_SOURCE)) kernel/boot.o )
-#kernel/utils.o)
+OBJECTS = $(addprefix $(TMP_PATH)/,$(patsubst %.c,%.o,$(C_SOURCE)) kernel/boot.o kernel/utils.o)
 
 usage:
 	@echo "hello"
